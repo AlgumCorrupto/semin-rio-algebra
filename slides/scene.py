@@ -13,6 +13,41 @@ fragHeight = 0.5
 
 class Scn(Slide):
     def construct(self):
+        # PRÓLOGO ######################
+        title = Text("Computação Gráfica ♥ Álgebra Linear", weight=BOLD)
+        subtitle = Text("Criado por Paulo Artur")
+        subtitle.next_to(title, DOWN)
+        tGroup = VGroup(title, subtitle)
+        tGroup.move_to(ORIGIN)
+        self.play(Write(title))
+        self.wait()
+        self.play(Write(subtitle))
+        self.wait(2)
+        self.next_slide()
+
+        self.play(FadeOut(tGroup))
+
+        title = Text("Conteúdo explorado:")
+        title.to_edge(UL)
+
+        self.play(Write(title))
+        self.next_slide()
+
+        indice = BulletedList(
+            "Representação das cores \\\\ em computadores.",
+            "Computação gráfica 101.",
+            "O que é um shader?",
+            "Exemplos de shaders."
+        )
+
+        for x in indice: 
+            self.play(Write(x))
+            self.wait()
+            self.next_slide()
+
+        self.wait()
+        self.play(FadeOut(*self.mobjects))
+        self.next_slide()
         # REPRESENTAÇÃO DAS CORES ###################################################################
         # title
         title = Text("Representação de cores\nem computadores")
