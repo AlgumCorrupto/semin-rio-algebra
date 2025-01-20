@@ -1,0 +1,104 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{blindtext}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=cyan,
+    }
+
+\title{Seminário de álgebra I}
+\author{Paulo Artur, \ldots?}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introdução}
+
+Apresentação dos palestrantes
+
+Hoje vamos fazer uma introdução de como shaders funcionam e sua relação com álgebra linear.
+
+\begin{itemize}
+\item Primeiro vamos falar como os computadores representam cores
+\item \ldots?
+\item Definir o que são shaders, e explicar sua relação com matrizes
+\end{itemize}
+
+\section*{Representação de cores}
+
+TALVEZ vamos explicar como o sistema de cores evoluiu durante os anos.
+
+\subsection*{Sistema Grayscale}
+
+Aqui vamos explicar como o sistema grayscale funciona.
+
+O sistema grayscale é um sistema de cor que por um único valor numérico podemos representar quão branco ou quão preto a luz é.
+
+Normalmente em computação gráfica existe 2 maneiras de representar os valores numéricos referentes a cor.
+
+\begin{itemize}
+\item de 0 até 255, ou representação 8-bits
+\item de 0.0 até 1.0, ou representação decimal normalizada, que pode ser conseguida por essa fórmula $\frac{\text{ValorDaCor}}{\text{ValorTotal}}$
+\end{itemize}
+
+
+Nesse documento vamos usar a representação decimal normalizada.
+
+\subsection*{Sistema RGB}
+
+Aqui vamos explicar como o sistema RGB funciona.
+
+O sistema rgb é como o sistema grayscale, com a diferença que no sistema grayscale você tem apenas 1 valor numérico (canal) para representar os valores que vão de 
+preto até branco. No sistema rgb vocẽ tem 3 valores numérios (canais) que misturados representam qualquer cor.
+
+\begin{itemize}
+    \item r: preto até vermelho 
+    \item g: preto até verde 
+    \item b: preto até azul 
+\end{itemize}
+
+(Mostrar animação 1).
+
+\section*{Shaders}
+
+Aqui explicamos o que são shaders e pixels
+
+Em monitores modernos existe uma matriz ou grid de pequenos pontos que são iluminados e coloridos, cada um desses pontos é chamado de pixel. Cada um desses pixeis tem um valor
+RGB atribuído.
+
+Cada ponto em uma imagem ou textura é chamado de texel mas informalmente podemos nos referir a esses pontos como pixeis.
+
+Um shader qualquer programa que roda na GPU, há vários tipos de shaders.
+
+Vamos falar sobre o fragment/pixel shader, que é um shader instanciado para cada pixel na tela.
+
+Temos uma matriz de números, existe uma lei de formação para a geração dessa matriz. Agora imagine que essa matriz de números seja uma matriz de pixels -- Uma imagem -- e que
+a lei de formação dessa matriz seja o shader. É assim que o fragment shader funciona.
+
+(Mostrar animação 2).
+
+\subsection*{Exemplos de shaders}
+
+Mostrar esses exemplos e dar um overview de como eles funcionam
+
+\begin{itemize}
+\item O exemplo mais simples de shader:\\
+ \url{https://www.shadertoy.com/view/4fKBWw}
+
+\item Circulo:\\
+ \url{https://www.shadertoy.com/view/XcVfWw}
+
+\item Shader animado:\\
+ \url{https://www.shadertoy.com/view/XfKBDw}
+
+\item Shader mais complexo:\\
+ \url{https://www.shadertoy.com/view/Xclcz2}
+
+\end{itemize}
+
+\end{document}
+
