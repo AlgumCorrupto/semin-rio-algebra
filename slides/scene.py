@@ -1,5 +1,6 @@
 from manim import *  # or: from manimlib import *
 from manim_slides import Slide
+from numpy import matrix
 
 
 def helloShader(point):
@@ -225,9 +226,10 @@ class Scn(Slide):
         for y in range(yMax):
             cols = []
             for x in range(xMax):
-                red, green, blue, a = helloShader(((x+1)/xMax, ((yMax - y))/yMax))
+                red, green, blue, a = helloShader(((x+1)/xMax, (((yMax - 1) - y))/yMax))
                 cols.append(r'({}, {}, {})'.format(red, green, blue))
             matrixValues.append(cols)
+        matrixValues.reverse()
 
         unresolvedVals = []
         for y in range(yMax):
@@ -239,7 +241,7 @@ class Scn(Slide):
 
         unresolvedVals.reverse()
 
-        oldMatrixVals = [[r"\left( \frac{i}{m}, \frac{j}{n}, 0.0, 1.0 \right)" for _ in range(yMax)] for _ in range(xMax)]
+        oldMatrixVals = [[r"\left( \frac{i}{m}, \frac{j}{n}, 0.0 \right)" for _ in range(yMax)] for _ in range(xMax)]
         
         oldMatrix = Matrix(oldMatrixVals, h_buff=4.6, v_buff=1.3,
                     element_to_mobject_config={}).scale(0.6)
@@ -283,7 +285,7 @@ class Scn(Slide):
         for y in range(yMax):
             for x in range(xMax):
                 # step sim
-                colors[x][y] = ManimColor.from_rgb(helloShader((float(x+1)/xMax, float(y+1)/yMax)))
+                colors[x][y] = ManimColor.from_rgb(helloShader((float((x+1)/xMax), float((yMax - y)/yMax))))
                 fragTo = Rectangle(stroke_width = 1, width=fragWidth, height=fragHeight, color=colors[x][y], fill_opacity=1)
                 corner = shaderContainer.get_corner(DL)
                 fragTo.move_to([corner[0] + (fragWidth*0.5) + (x*fragWidth), corner[1] + (fragHeight*0.5) + (y*fragHeight), corner[2]])
