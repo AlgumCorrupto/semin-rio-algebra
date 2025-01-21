@@ -237,6 +237,8 @@ class Scn(Slide):
                 cols.append(r'\left( \frac{' + str(x+1) + r'}{' + str(xMax) + r'}, \frac{' + str((yMax) - y) + r'}{' + str(yMax) + r'}, 0.0 \right)')
             unresolvedVals.append(cols)
 
+        unresolvedVals.reverse()
+
         oldMatrixVals = [[r"\left( \frac{i}{m}, \frac{j}{n}, 0.0, 1.0 \right)" for _ in range(yMax)] for _ in range(xMax)]
         
         oldMatrix = Matrix(oldMatrixVals, h_buff=4.6, v_buff=1.3,
