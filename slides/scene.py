@@ -16,7 +16,7 @@ class Scn(Slide):
     def construct(self):
         # PRÓLOGO ######################
         title = Text("Computação Gráfica ♥ Álgebra Linear", weight=BOLD)
-        subtitle = Text("Criado por Paulo Artur")
+        subtitle = Text("Criado por Apolo Arêas, Paulo Artur")
         subtitle.next_to(title, DOWN)
         tGroup = VGroup(title, subtitle)
         tGroup.move_to(ORIGIN)
