@@ -212,7 +212,7 @@ class Scn(Slide):
         
         self.next_slide()
         # ANIMAÇÃO EXEMPLO DE SHADERS ##############################################
-        genFunText = Text("Lei geradora do Shader:")
+        genFunText = Text("Lei geradora desse shader:")
         genFunText.move_to(UP)
         genFunMath = MathTex(r"A[i][j] = \left( \frac{i}{m}, \frac{j}{n}, 0.0 \right)")
         genFunMath.next_to(genFunText, DOWN)
