@@ -27,7 +27,7 @@ class Mock(Slide):
         for y in range(yMax):
             cols = []
             for x in range(xMax):
-                red, green, blue, a = helloShader(((x+1)/xMax, (((yMax - 1) - y))/yMax))
+                red, green, blue, a = helloShader(((x+1)/xMax, ((yMax - y))/yMax))
                 cols.append(r'({}, {}, {})'.format(red, green, blue))
             matrixValues.append(cols)
         matrixValues.reverse()
@@ -36,7 +36,7 @@ class Mock(Slide):
         for y in range(yMax):
             cols = []
             for x in range(xMax):
-                red, green, blue, a = helloShader(((x+1)/xMax, ((yMax - y))/yMax))
+                red, green, blue, a = helloShader(((x+1)/xMax, ((yMax - y)-1)/yMax))
                 cols.append(r'\left( \frac{' + str(x+1) + r'}{' + str(xMax) + r'}, \frac{' + str((yMax) - y) + r'}{' + str(yMax) + r'}, 0.0 \right)')
             unresolvedVals.append(cols)
 
@@ -86,7 +86,7 @@ class Mock(Slide):
         for y in range(yMax):
             for x in range(xMax):
                 # step sim
-                colors[x][y] = ManimColor.from_rgb(helloShader((float((x+1)/xMax), float(((yMax - y)-1)/yMax))))
+                colors[x][y] = ManimColor.from_rgb(helloShader((float((x+1)/xMax), float((yMax - y)/yMax))))
                 fragTo = Rectangle(stroke_width = 1, width=fragWidth, height=fragHeight, color=colors[x][y], fill_opacity=1)
                 corner = shaderContainer.get_corner(DL)
                 fragTo.move_to([corner[0] + (fragWidth*0.5) + (x*fragWidth), corner[1] + (fragHeight*0.5) + (y*fragHeight), corner[2]])
