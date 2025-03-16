@@ -1,16 +1,17 @@
 from manim import *
+from manim_slides import Slide
 
-class Scn(Scene):
+class Prol(Slide):
     def construct(self):
         title = Text("Computação Gráfica ♥ Álgebra Linear", weight=BOLD)
-        subtitle = Text("Criado por Paulo Artur")
+        subtitle = Text("Criado por Apolo Arêas, Paulo Artur")
         subtitle.next_to(title, DOWN)
         tGroup = VGroup(title, subtitle)
         tGroup.move_to(ORIGIN)
         self.play(Write(title))
         self.wait()
         self.play(Write(subtitle))
-        self.wait(2)
+        self.next_slide()
 
         self.play(FadeOut(tGroup))
 
@@ -21,14 +22,19 @@ class Scn(Scene):
 
         indice = BulletedList(
             "Representação das cores \\\\ em computadores.",
+            "Espaços de coordenadas.",
+            "Pipelines gráficas.",
+
+        )
+        indice2 = BulletedList(
             "Computação gráfica 101.",
             "O que é um shader?",
             "Exemplos de shaders."
         )
 
-        for x in indice: 
-            self.play(Write(x))
-            self.wait()
+        self.play(Write(indice))
+        self.next_slide()
+        self.play(ReplacementTransform(indice, indice2))
+        self.next_slide()
 
-        self.wait()
-        self.play(FadeOut(indice))
+        self.play(FadeOut(*self.mobjects))

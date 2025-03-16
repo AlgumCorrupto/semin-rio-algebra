@@ -1,11 +1,13 @@
 from manim import *
+from manim_slides import Slide
 
-class Scn(Scene):
+class Rgb(Slide):
     def construct(self):
         # title
         title = Text("Representação de cores\nem computadores")
         title.to_edge(UP)
-        self.add(title)
+        self.play(Write(title))
+        self.next_slide()
         # grayscale
         grayscaleGradient   =  Rectangle(stroke_width=0, fill_color=[WHITE, BLACK], fill_opacity=1.0, 
         width=4.0, height=0.3)
@@ -20,11 +22,12 @@ class Scn(Scene):
         sampleGrayscale.add_updater(lambda n: n.set_fill(  color=ManimColor.from_rgb((  (grayscaleHead.get_center()[0] - grayscaleGradient.get_left()[0]) / grayscaleGradient.width,
                                                                                         (grayscaleHead.get_center()[0] - grayscaleGradient.get_left()[0]) / grayscaleGradient.width,
                                                                                         (grayscaleHead.get_center()[0] - grayscaleGradient.get_left()[0]) / grayscaleGradient.width) )))
-
         grayscaleDec.add_updater(lambda n: n.set_value(sampleGrayscale.fill_color.to_rgb()[0]))
+        self.next_slide()
 
-        self.add(grayscaleGradient, sampleGrayscale, grayscaleHead, grayscaleDec)
-        self.wait(3)
+        self.play(FadeIn(grayscaleGradient, sampleGrayscale, grayscaleHead, grayscaleDec))
+        self.next_slide(loop=True)
+        self.wait(2)
         self.play(grayscaleHead.animate.set_x(grayscaleGradient.get_right()[0]))
         self.wait()
         self.play(grayscaleHead.animate.set_x(grayscaleGradient.get_center()[0]))
@@ -32,7 +35,10 @@ class Scn(Scene):
         self.play(grayscaleHead.animate.set_x(grayscaleGradient.get_left()[0]))
         self.wait()
         self.play(grayscaleHead.animate.set_x(grayscaleGradient.get_right()[0]))
-        self.wait(3)
+        self.wait()
+        self.play(grayscaleHead.animate.set_x(grayscaleGradient.get_center()[0]))
+
+        self.next_slide()
         self.play(FadeOut(grayscaleHead, grayscaleGradient, sampleGrayscale, grayscaleDec))
 
         # rgb
@@ -91,6 +97,7 @@ class Scn(Scene):
         self.wait()
         self.play(ReplacementTransform(rgbText, rgbGroup), FadeIn(easter_egg), FadeIn(sampleRect))
         self.wait()
+        self.next_slide()
 
         rValue.add_updater(lambda d: d.set_value(sampleRect.fill_color.to_rgb()[0]))
         #rValue.add_updater(lambda d: d.set_value(sampleRect.get_center()[1]))
@@ -98,6 +105,7 @@ class Scn(Scene):
         bValue.add_updater(lambda d: d.set_value(sampleRect.fill_color.to_rgb()[2]))
         aValue.add_updater(lambda d: d.set_value(sampleRect.get_fill_opacity()))
 
+        self.next_slide(loop=True)
         self.play(sampleRect.animate.set_fill(color=ManimColor.from_rgb((1.0, 0.0, 0.0)), opacity=1.0))
         self.wait()
         self.play(sampleRect.animate.set_fill(color=ManimColor.from_rgb((0.0, 1.0, 0.0)), opacity=1.0), easter_egg.animate.set_fill(WHITE, opacity=1.0))
@@ -109,3 +117,10 @@ class Scn(Scene):
         self.wait()
         self.play(sampleRect.animate.set_fill(color=ManimColor.from_rgba((1.0, 1.0, 0.0, 1.0)), opacity=1.0))
         self.wait()
+        self.play(sampleRect.animate.set_fill(color=WHITE, opacity=1.0))
+        self.wait()
+        self.next_slide()
+
+        self.remove(easter_egg)
+        self.play(FadeOut(*self.mobjects))
+        self.next_slide()

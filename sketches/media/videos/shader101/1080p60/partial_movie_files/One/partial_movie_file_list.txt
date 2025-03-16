@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/shader101/1080p60/partial_movie_files/One/3529212410_3542948002_223132457.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/shader101/1080p60/partial_movie_files/One/3040924799_1062471666_1573513716.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/shader101/1080p60/partial_movie_files/One/3040924799_1733944848_3758082342.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/shader101/1080p60/partial_movie_files/One/3040924799_1561806891_1609328774.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/shader101/1080p60/partial_movie_files/One/3040924799_2016584619_1696086080.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/shader101/1080p60/partial_movie_files/One/3040924799_3582080864_496195811.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/shader101/1080p60/partial_movie_files/One/3040924799_1733944848_1510013327.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/shader101/1080p60/partial_movie_files/One/3040924799_2919954093_2358810818.mp4'

@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/coordspaces/1080p60/partial_movie_files/Coord/1976804181_2754083664_223132457.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/coordspaces/1080p60/partial_movie_files/Coord/4058111979_932977538_3533648270.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/coordspaces/1080p60/partial_movie_files/Coord/2153078628_2880459158_1323858863.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/coordspaces/1080p60/partial_movie_files/Coord/2153078628_87457140_4288650199.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/coordspaces/1080p60/partial_movie_files/Coord/3610685258_2108024576_4195846191.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/coordspaces/1080p60/partial_movie_files/Coord/3427341968_3352284148_2819253569.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/coordspaces/1080p60/partial_movie_files/Coord/3427341968_549162541_627372272.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/coordspaces/1080p60/partial_movie_files/Coord/3419738879_700678546_4040720775.mp4'
+file 'file:/home/paulo/development/seminário-algebra/sketches/media/videos/coordspaces/1080p60/partial_movie_files/Coord/1246709257_2098031372_2358810818.mp4'

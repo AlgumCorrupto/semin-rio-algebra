@@ -1,3 +1,3 @@
 #!/bin/bash
 
-manim -pqh $1 Scn
+manim -pql $1 Scn

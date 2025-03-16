@@ -1,0 +1,64 @@
+{
+  "slides": [
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "file": "slides/files/Coord/465d225e2cb26177bc5af257aca6b3a1f81c16d1788256388b873c4f117ea4ee.mp4",
+      "rev_file": "slides/files/Coord/465d225e2cb26177bc5af257aca6b3a1f81c16d1788256388b873c4f117ea4ee_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "file": "slides/files/Coord/4b805dd56defc745d189b0c49a384f51eecec8701fbfc47b03067916cedf2f70.mp4",
+      "rev_file": "slides/files/Coord/4b805dd56defc745d189b0c49a384f51eecec8701fbfc47b03067916cedf2f70_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "file": "slides/files/Coord/e5caa2a2b6353abbce49d442a8489c9cdb016749ade32caef96917cc2131c011.mp4",
+      "rev_file": "slides/files/Coord/e5caa2a2b6353abbce49d442a8489c9cdb016749ade32caef96917cc2131c011_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "file": "slides/files/Coord/02afa9338947b01db30441da140769951693f48b44b25048583e837bf1051520.mp4",
+      "rev_file": "slides/files/Coord/02afa9338947b01db30441da140769951693f48b44b25048583e837bf1051520_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "file": "slides/files/Coord/8a04ce0dd9aae2fa5575f5d49cd3d05160b80ca40eb4cb62c77c6123483cfbd6.mp4",
+      "rev_file": "slides/files/Coord/8a04ce0dd9aae2fa5575f5d49cd3d05160b80ca40eb4cb62c77c6123483cfbd6_reversed.mp4"
+    }
+  ],
+  "resolution": [
+    1920,
+    1080
+  ],
+  "background_color": "black"
+}

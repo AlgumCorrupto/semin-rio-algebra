@@ -1,0 +1,64 @@
+{
+  "slides": [
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "file": "slides/files/Mock/d1240e83f9b6dc9278f5d553534c1c9cfeee3fa4bdb6ef098baeb83f14a7cc9c.mp4",
+      "rev_file": "slides/files/Mock/d1240e83f9b6dc9278f5d553534c1c9cfeee3fa4bdb6ef098baeb83f14a7cc9c_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "file": "slides/files/Mock/af403212d7a9dbbe75ddf9849e851d58e1d0abe94802a487daf609d4537aef12.mp4",
+      "rev_file": "slides/files/Mock/af403212d7a9dbbe75ddf9849e851d58e1d0abe94802a487daf609d4537aef12_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "file": "slides/files/Mock/206f433863ef49a3e88cc8c34341b5f9a8c13024c881a6f89502e8adf9e369db.mp4",
+      "rev_file": "slides/files/Mock/206f433863ef49a3e88cc8c34341b5f9a8c13024c881a6f89502e8adf9e369db_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "file": "slides/files/Mock/a7a828d5ad58d2c0c7118ba18023e2d04163c349548b69d78c80ea5864dc0008.mp4",
+      "rev_file": "slides/files/Mock/a7a828d5ad58d2c0c7118ba18023e2d04163c349548b69d78c80ea5864dc0008_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "file": "slides/files/Mock/aec8661d5bb68a32cfa58cb4c6bb204f97924cc3589e161e4c97782d7dbb366f.mp4",
+      "rev_file": "slides/files/Mock/aec8661d5bb68a32cfa58cb4c6bb204f97924cc3589e161e4c97782d7dbb366f_reversed.mp4"
+    }
+  ],
+  "resolution": [
+    1920,
+    1080
+  ],
+  "background_color": "black"
+}
