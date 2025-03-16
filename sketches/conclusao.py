@@ -7,7 +7,7 @@ class Conc(Slide):
 
         title.to_edge(UL)
 
-        conclusao = Tex("Muita das coisas\\\\que são utilizadas na\\\\Computação Gráfica, vieram\\\\diretamente de conceitos\\\\da Álgebra Linear.")
+        conclusao = Tex("Muitos dos conceitos\\\\que são utilizadas na\\\\Computação Gráfica, vieram\\\\diretamente de conceitos abordados\\\\pela Álgebra Linear.")
         self.play(Write(title), Write(conclusao))
         self.next_slide()
 

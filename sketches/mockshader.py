@@ -96,3 +96,7 @@ class Mock(Slide):
                 self.add(fragFrom)
                 self.play(TransformFromCopy(fragFrom, fragTo))
 
+        self.next_slide()
+        self.play(FadeOut(*self.mobjects))
+        self.next_slide()
+
